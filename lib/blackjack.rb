@@ -44,12 +44,14 @@ def hit?
   elsif user_input== "s"
   else
   invalid_command
-  prompt_user
+  
   # code hit? here
 end
 
 def invalid_command
   puts "Please enter a valid command"
+  prompt_user
+  get_user_input
   # code invalid_command here
 end
 
